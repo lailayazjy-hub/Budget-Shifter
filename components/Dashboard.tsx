@@ -651,7 +651,13 @@ export const Dashboard: React.FC = () => {
               )}
 
               {/* Visualization */}
-              <SimulationChart data={filteredLines} showInThousands={settings.showInThousands} theme={colors} decimalPrecision={settings.decimalPrecision} />
+              <SimulationChart 
+                data={filteredLines} 
+                showInThousands={settings.showInThousands} 
+                theme={colors} 
+                decimalPrecision={settings.decimalPrecision}
+                newInvestment={shortageInput} 
+              />
 
               {/* Data Table */}
               <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden">
